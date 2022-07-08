@@ -1,0 +1,39 @@
+{
+  "name": "nubezartech/sau_sdk",
+  "description": "Kit de desarrollo de software (SDK) para la gestión del Sistema de Acceso Unificado (NubezarTech/SAU). [Soluciones Informáticas NubezarTech]",
+  "type": "library",
+  "require": {
+    "guzzlehttp/guzzle": "^7.4",
+    "vlucas/phpdotenv": "^5.4"
+  },
+  "require-dev": {
+    "guzzlehttp/guzzle": "^7.4",
+    "phpunit/phpunit": "^9.5",
+    "squizlabs/php_codesniffer": "^3.7"
+  },
+  "authors": [
+    {
+      "name": "Soluciones Informáticas NubezarTech",
+      "email": "develop@nubezartech.es",
+      "page": "http://www.nubezartech.es",
+      "github": "https://www.github.com/nubezartech"
+        },
+    {
+      "name": "Adan Nahir Abad Mora",
+      "email": "adanabad@nubezartech.es",
+      "role": "CEO, project manager and software de developer.",
+      "github": "https://www.github.com/aabadmo4"
+        }
+    ],
+  "autoload": {
+    "psr-4": {
+      "NubezarTech_SAU_sdk\\Math\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "NubezarTech_SAU_sdk\\Math\\": "src/",
+      "NubezarTech_SAU_sdk\\Tests\\": "tests/"
+    }
+  }
+}
