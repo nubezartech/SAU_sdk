@@ -3,15 +3,15 @@
  <img width=817px height=100px src="http://nubezar.tech/media_shared/NubezarTech_horizontal_900x360px__LIGHT_transparent.png" alt="NubezarTech_Logo_Horizontal">
 </p>
 
+
+
+![PRs](https://img.shields.io/github/issues-pr/nubezartech/SAU_sdk)
+![Issues](https://img.shields.io/github/issues/nubezartech/SAU_sdk)
+![Stars](https://img.shields.io/github/stars/nubezartech/SAU_sdk)
+![License](https://img.shields.io/github/license/nubezartech/SAU_sdk)
+
 <h1 align="center" style="font-family:'Roboto';">[Sistema de Acceso Unificado - SDK
 <h2 align="center" style="font-family:'Roboto'; font-style: italic;"><a href="http://www.nubezartech.es">Soluciones Informáticas NubezarTech</a></h2>
-
-
-
-<div align="center">
-
-![GitHub branch checks state](https://img.shields.io/github/checks-status/nubezartech/SAU_sdk/main?label=Main)
-</div>
 
 
 ## ✍️ Authors <a name = "authors"></a>
