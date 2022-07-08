@@ -4,7 +4,8 @@
 </p>
 
 
-![Main Branch status](https://img.shields.io/badge/Branch-Main-green)
+
+![PRs](https://img.shields.io/github/issues-pr/nubezartech/SAU_sdk)
 ![Issues](https://img.shields.io/github/issues/nubezartech/SAU_sdk)
 ![Stars](https://img.shields.io/github/stars/nubezartech/SAU_sdk)
 ![License](https://img.shields.io/github/license/nubezartech/SAU_sdk)
