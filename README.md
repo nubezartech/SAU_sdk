@@ -10,7 +10,12 @@
 
 <div align="center">
 
-![GitHub branch checks state](https://img.shields.io/github/checks-status/nubezartech/SAU_sdk/main?label=Main)
+![Branch status](https://img.shields.io/github/checks-status/nubezartech/SAU_sdk/main?label=Main)
+
+![Issues](https://img.shields.io/github/issues/nubezartech/SAU_sdk)
+
+![stars](https://img.shields.io/github/stars/nubezartech/SAU_sdk)
+
 </div>
 
 
