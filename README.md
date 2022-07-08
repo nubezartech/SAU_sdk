@@ -14,20 +14,6 @@
 <h2 align="center" style="font-family:'Roboto'; font-style: italic;"><a href="http://www.nubezartech.es">Soluciones Informáticas NubezarTech</a></h2>
 
 
-
-<div align="center">
-
-![Main Branch status](https://img.shields.io/badge/Branch-Main-green)
-
-![Issues](https://img.shields.io/github/issues/nubezartech/SAU_sdk)
-
-![Stars](https://img.shields.io/github/stars/nubezartech/SAU_sdk)
-
-
-![License](https://img.shields.io/github/license/nubezartech/SAU_sdk)
-</div>
-
-
 ## ✍️ Authors <a name = "authors"></a>
 - [@solucionesnubezar](https://github.com/solucionesnubezar) - <b>Soluciones Informáticas NubezarTech</b> <br>
 
