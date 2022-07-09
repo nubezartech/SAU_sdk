@@ -34,5 +34,6 @@
       "NubezarTech_SAU_sdk\\Math\\": "src/",
       "NubezarTech_SAU_sdk\\Tests\\": "tests/"
     }
-  }
+  },
+  "minimum-stability":"dev"
 }
