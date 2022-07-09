@@ -15,9 +15,9 @@ jobs:
           pr_title: "Pulling [dev] ${{ github.ref }} into [main]. AutoPR" # Title of pull request
           pr_body: ":crown: *An automated PR*. Developer Team: @nubezartech/internaldevs."
           pr_reviewer: "aabadmo4"
-          github_token: ${{ secrets.ORG_GITHUB_ACCES_TOKEN }}
-      - uses: fjogeleit/http-request-action@v1
+          github_token: ${{ secrets.ORG_GITHUB_ACCES_TOKEN }}  
       - name: Deploy Stage
+        uses: fjogeleit/http-request-action@v1
         with:
           url: ${{ secrets.TW_MAKE_SMS_URL_POST_JSON }}
           method: 'POST'
