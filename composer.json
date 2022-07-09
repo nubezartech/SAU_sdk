@@ -26,7 +26,7 @@
     ],
   "autoload": {
     "psr-4": {
-      "NubezarTech_SAU_sdk\\Math\\": "public_html/"
+      "NubezarTech_SAU_sdk\\Math\\": "dev/"
     }
   },
   "autoload-dev": {
