@@ -4,7 +4,7 @@
   "type": "library",
   "require": {
     "guzzlehttp/guzzle": "^7.4",
-    "vlucas/phpdotenv": "^5.4"
+    "vlucas/phpdotenv": "5.4.x-dev"
   },
   "require-dev": {
     "guzzlehttp/guzzle": "^7.4",
@@ -26,14 +26,17 @@
     ],
   "autoload": {
     "psr-4": {
-      "NubezarTech_SAU_sdk\\Math\\": "dev/"
+      "NubezarTech_SAU_sdk\\Controllers\\AuthController\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "NubezarTech_SAU_sdk\\Math\\": "src/",
-      "NubezarTech_SAU_sdk\\Tests\\": "tests/"
+      "NubezarTech_SAU_sdk\\Controllers\\AuthController\\": "src/",
+      "NubezarTech_SAU_sdk\\Controllers\\ComunicationsController\\": "src/",
+      "NubezarTech_SAU_sdk\\Controllers\\OTPCodesController\\": "src/",
+      "NubezarTech_SAU_sdk\\Controllers\\RecoveryController\\": "src/",
+      "NubezarTech_SAU_sdk\\Controllers\\SessionsController\\": "src/",
+      "NubezarTech_SAU_sdk\\Controllers\\UsersController\\": "src/"
     }
-  },
-  "minimum-stability":"dev"
+  }
 }

@@ -5,9 +5,9 @@ use NubezarTech\SAU_sdk\Models;
 require_once "Models/User.php";
 
 class UsersController{
-    private $user;
+    private $User;
     public function __construct(){
-        $this->user = new Models\User();
+        $this->User = new Models\User();
     }
     public function getUsers($limit=20, $page=1, $order="DESC"){
 
@@ -16,3 +16,6 @@ class UsersController{
 
     }
 }
+
+
+
