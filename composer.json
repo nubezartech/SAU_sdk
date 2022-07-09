@@ -34,12 +34,5 @@
       "NubezarTech_SAU_sdk\\Math\\": "src/",
       "NubezarTech_SAU_sdk\\Tests\\": "tests/"
     }
-  },
-  "repositories": {
-    "private-packagist": {
-      "type": "composer",
-      "url": "https://repo.packagist.com/nubezartech/"
-    },
-    "packagist.org": false
   }
 }
