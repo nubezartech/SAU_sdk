@@ -1,8 +1,6 @@
 <?php
-
-namespace NubezarTech\SAU_sdk\Controllers;
-
-use NubezarTech\SAU_sdk\Models;
+namespace SAU_sdk\Controllers;
+use SAU_sdk\Models;
 
 require_once "Models/OTPCode.php";
 class OTPCodesController

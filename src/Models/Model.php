@@ -1,5 +1,5 @@
 <?php
-namespace NubezarTech\SAU_sdk\Models;
+namespace SAU_sdk\Models;
 
 class Model
 {

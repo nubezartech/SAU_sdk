@@ -23,26 +23,16 @@
       "email": "adanabad@nubezartech.es",
       "role": "CEO, project manager and software de developer.",
       "homepage": "https://www.github.com/aabadmo4"
-        }
-    ],
+    }
+  ],
   "autoload": {
     "psr-4": {
-      "NubezarTech_SAU_sdk\\Controllers\\AuthController\\": "src/",
-      "NubezarTech_SAU_sdk\\Controllers\\ComunicationsController\\": "src/",
-      "NubezarTech_SAU_sdk\\Controllers\\OTPCodesController\\": "src/",
-      "NubezarTech_SAU_sdk\\Controllers\\RecoveryController\\": "src/",
-      "NubezarTech_SAU_sdk\\Controllers\\SessionsController\\": "src/",
-      "NubezarTech_SAU_sdk\\Controllers\\UsersController\\": "src/"
+      "SAU_sdk\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "NubezarTech_SAU_sdk\\Controllers\\AuthController\\": "src/",
-      "NubezarTech_SAU_sdk\\Controllers\\ComunicationsController\\": "src/",
-      "NubezarTech_SAU_sdk\\Controllers\\OTPCodesController\\": "src/",
-      "NubezarTech_SAU_sdk\\Controllers\\RecoveryController\\": "src/",
-      "NubezarTech_SAU_sdk\\Controllers\\SessionsController\\": "src/",
-      "NubezarTech_SAU_sdk\\Controllers\\UsersController\\": "src/"
+      "SAU_sdk\\": "src/"
     }
   }
 }

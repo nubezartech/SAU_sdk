@@ -1,5 +1,5 @@
 <?php
-namespace NubezarTech\SAU_sdk\Controllers;
+namespace SAU_sdk\Controllers;
 
 class RecoveryController
 {

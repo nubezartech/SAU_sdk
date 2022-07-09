@@ -1,20 +1,18 @@
 <?php
-
-namespace NubezarTech\SAU_sdk\Controllers;
-
+namespace SAU_sdk;
+//use \Controllers;
 require_once "Controllers/SessionsController.php";
 require_once "Controllers/OTPCodesController.php";
 require_once "Controllers/ComunicationsController.php";
 
 class AuthController
 {
-    
     private $OTPCodesController;
     public function __construct()
     {
-        $this->SessionsController = new SessionsController();
-        $this->OTPCodesController = new OTPCodesController();
-        $this->ComunicationsController = new ComunicationsController();
+        $this->SessionsController = new Controllers\SessionsController();
+        $this->OTPCodesController = new Controllers\OTPCodesController();
+        $this->ComunicationsController = new Controllers\ComunicationsController();
     }
     public function logIn($email, $password)
     {
