@@ -15,14 +15,13 @@
     {
       "name": "Soluciones Informáticas NubezarTech",
       "email": "develop@nubezartech.es",
-      "page": "http://www.nubezartech.es",
-      "github": "https://www.github.com/nubezartech"
-        },
+      "homepage": "http://www.nubezartech.es"
+    },
     {
       "name": "Adan Nahir Abad Mora",
       "email": "adanabad@nubezartech.es",
       "role": "CEO, project manager and software de developer.",
-      "github": "https://www.github.com/aabadmo4"
+      "homepage": "https://www.github.com/aabadmo4"
         }
     ],
   "autoload": {
