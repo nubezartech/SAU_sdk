@@ -24,9 +24,9 @@ class SessionsController
     */
     public function makeSession($user,$expiration_time=5400)
     {
-        $this->session_token = $this->OTPCodesController->generateOTPCode(false);
-        return (object) json_decode(json_encode(array("session_token"=>$this->session_token,
-                                                      "session_user_id" => $user->user_id,
-                                                      "session_expiration_time" => 5400)),false);
+        
+    }
+    public function destoySession(){
+        
     }
 }
