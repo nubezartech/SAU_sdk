@@ -2,7 +2,7 @@
   "name": "nubezartech/sau_sdk",
   "description": "Kit de desarrollo de software (SDK) para la gestión del Sistema de Acceso Unificado (NubezarTech/SAU). [Soluciones Informáticas NubezarTech]",
   "type": "library",
-  "version": "2.1.5",
+  "version": "2.1.7",
   "require": {
     "guzzlehttp/guzzle": "^7.4",
     "vlucas/phpdotenv": "5.4.x-dev"
