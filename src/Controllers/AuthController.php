@@ -26,14 +26,14 @@ class AuthController
                 ), false));
 
                 $otp=$this->OTPCodesController->generateOTPCode(false);
-                $this->ComunicationsController->sendSMS($user->user_2fa, $otp);
-                return (object) json_decode(json_encode(array("otp_token"=>$otp,
+                //$this->ComunicationsController->sendSMS($user->user_2fa, $otp);
+                return json_encode(array("otp_token"=>$otp,
                                                               "otp_user_id" => $user->user_id,
                                                               "otp_expiration_time" => 2000,
-                                                              "url_get_session_token"=>"http://sau.nubezartech.es/auth/get_session_token")),false);
+                                                              "url_get_session_token"=>"http://sau.nubezartech.es/auth/get_session_token"));
             }
         }
-        return array("error" => "Invalid credentials");
+        return json_encode(array("error" => "Invalid credentials"));
     }
 
     public function GetSessionTokenWithOTP($email, $otp)
@@ -56,4 +56,3 @@ class AuthController
     {
     }
 }
-
