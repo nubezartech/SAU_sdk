@@ -13,6 +13,24 @@
 <h1 align="center" style="font-family:'Roboto';">[Sistema de Acceso Unificado - SDK
 <h2 align="center" style="font-family:'Roboto'; font-style: italic;"><a href="http://www.nubezartech.es">Soluciones Informáticas NubezarTech</a></h2>
 
+## 📝 Tabla de contenido
+
+- [Instalación](#installation)
+- [Configuración del entorno](#enviroment)
+- [Author](#author)
+
+
+## ⛏️ Configura las variables del entorno <a name = "enviroment"></a>
+
+Por seguridad, los datos sensibles, como pueden ser credenciales de acceso a bases de datos, credenciales y claves de APIs, no se encuentran el el repositorio público.
+
+- <b>[ .env.example ]</b>- Archivo de configuración variables de entorno de ejemplo.
+
+Copiar en archivo .env.example en el directorio raíz del proyecto, y renombralo a .env. 
+```
+cp .env.example .env
+```
+Configura las variables de entorno.
 
 ## ✍️ Authors <a name = "authors"></a>
 - [@solucionesnubezar](https://github.com/solucionesnubezar) - <b>Soluciones Informáticas NubezarTech</b> <br>
