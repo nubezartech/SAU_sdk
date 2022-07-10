@@ -1,18 +1,20 @@
 <?php
-namespace SAU_sdk;
+namespace SAU_sdk\Controllers;
 //use \Controllers;
+
+/* 
 require_once "Controllers/SessionsController.php";
 require_once "Controllers/OTPCodesController.php";
 require_once "Controllers/ComunicationsController.php";
-
+ */
 class AuthController
 {
     private $OTPCodesController;
     public function __construct()
     {
-        $this->SessionsController = new Controllers\SessionsController();
-        $this->OTPCodesController = new Controllers\OTPCodesController();
-        $this->ComunicationsController = new Controllers\ComunicationsController();
+        $this->SessionsController = new SessionsController();
+        $this->OTPCodesController = new OTPCodesController();
+        $this->ComunicationsController = new ComunicationsController();
     }
     public function logIn($email, $password)
     {

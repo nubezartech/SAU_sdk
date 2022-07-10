@@ -2,8 +2,6 @@
 namespace SAU_sdk\Controllers;
 use SAU_sdk\Models;
 
-require_once "Models/Session.php";
-require_once "Controllers/OTPCodesController.php";
 class SessionsController
 {
     private $Session;

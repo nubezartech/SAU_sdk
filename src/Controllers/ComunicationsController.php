@@ -2,7 +2,6 @@
 
 namespace SAU_sdk\Controllers;
 
-require_once "Models/Comunication.php";
 class ComunicationsController
 {
     public function sendSMS($receiver, $msg)

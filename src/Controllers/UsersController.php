@@ -2,7 +2,6 @@
 namespace SAU_sdk\Controllers;
 use SAU_sdk\Models;
 
-require_once "Models/User.php";
 
 class UsersController{
     private $User;

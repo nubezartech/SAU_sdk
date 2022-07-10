@@ -2,7 +2,6 @@
 namespace SAU_sdk\Controllers;
 use SAU_sdk\Models;
 
-require_once "Models/OTPCode.php";
 class OTPCodesController
 {
     private $OTPCode;
