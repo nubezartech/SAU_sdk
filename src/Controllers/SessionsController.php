@@ -4,12 +4,12 @@ use SAU_sdk\Models;
 
 class SessionsController
 {
-    private $Session;
+    private $SessionModel;
     private $OTPCodesController;
     private $session_token;
     public function __construct()
     {
-        $this->Session = new Models\Session();
+        $this->SessionModel = new Models\Session();
         $this->OTPCodesController = new OTPCodesController();
     }
 
@@ -18,11 +18,21 @@ class SessionsController
     * @param int $expiration_time (optional, 90min. by default) Expiration time of the session in seconds.
     * @return Model/Session An object with data of the session.
     */
-    public function makeSession($user,$expiration_time=5400)
+    public function makeSession($user)
     {
+        $this->session_token = $this->OTPCodesController->generateOTPCode();
+        $this->SessionModel->newSession($user->user_id, $this->session_token);
+    }
+    public function destroySession(){
         
     }
-    public function destoySession(){
-        
+
+    public function getActiveByUser($user_id){
+        if($session=$this->SessionModel->getActiveByUserId($user_id)){
+            return $session;
+        }else{
+            return array("err"=>"no");
+        }
     }
+
 }

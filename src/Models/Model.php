@@ -14,10 +14,11 @@ class Model
 
     public function __construct()
     {
-        $this->db_host = $_ENV["NUBEZARTECHSAU_DB_HOST"];
-        $this->db_user = $_ENV["NUBEZARTECHSAU_DB_USER"];
-        $this->db_password = $_ENV["NUBEZARTECHSAU_DB_PASS"];
-        $this->db = $_ENV["NUBEZARTECHSAU_DB_NAME"];
+        $this->db_host = $_ENV["DB_SAU_HOST"];
+        $this->db_host = $_ENV["DB_SAU_PORT"];
+        $this->db_user = $_ENV["DB_SAU_USER"];
+        $this->db_password = $_ENV["DB_SAU_PASS"];
+        $this->db = $_ENV["DB_SAU_NAME"];
 
         $this->conex = new mysqli($this->db_host, $this->db_user, $this->db_password, $this->db)
             or die(mysqli_error($this->conex));
@@ -41,9 +42,10 @@ class Model
         } catch (PDOException $e) {
             return $e->getMessage();
         }
+        //$this->close();
         return $result;
     }
-    public function close()
+    public function close($result)
     {
         mysqli_close($this->conex);
     }

@@ -21,4 +21,16 @@ class OTPCodesController
         $aleatoria = substr(str_shuffle($caracteres), 0, $lenght);
         return $aleatoria;
     }
+    public function verifyOTPCode($user_id, $code)
+    {
+        if($otp=$this->OTPCode->getStatusByCode($user_id, $code)){
+            if($otp["otp_status"]==1){
+                return true;
+            }else{
+                return false;
+            }
+        }else{
+            return false;
+        }
+    }
 }

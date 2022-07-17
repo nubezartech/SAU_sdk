@@ -1,11 +1,24 @@
-name: CI - Integración Continua
+name: CI
 on:
   push:
     branches: [dev]
 
 jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+      - name: Validate composer.json and composer.lock
+        run: composer validate
+      - name: Install dependencies
+        run: composer install --prefer-dist --no-progress --no-suggest
+      - name: Run test suite
+        run: composer run-script testdox
+
   create_pr:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v2
       - name: pull-request
@@ -16,10 +29,3 @@ jobs:
           pr_body: ":crown: *An automated PR*. Developer Team: @nubezartech/internaldevs."
           pr_reviewer: "aabadmo4"
           github_token: ${{ secrets.ORG_GITHUB_ACCES_TOKEN }}  
-      - name: Deploy Stage
-        uses: fjogeleit/http-request-action@v1
-        with:
-          url: ${{ secrets.TW_MAKE_SMS_URL_POST_JSON }}
-          method: 'POST'
-          customHeaders: '{"Content-Type": "application/json"}'
-          data: '{"receiver": "+34643042261", "msg": "[- $GITHUB_REPOSITORY -]  Pulling [dev] ${{ github.ref }} into [main]. ${{steps.open-pr.outputs.pr_url}}"}'
