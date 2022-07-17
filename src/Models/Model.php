@@ -3,6 +3,7 @@
 namespace SAU_sdk\Models;
 use mysqli;
 use PDOException;
+use Dotenv;
 
 class Model
 {
