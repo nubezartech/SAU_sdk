@@ -4,9 +4,10 @@
 </p>
 
 
+[![CI](https://github.com/nubezartech/SAU_sdk/actions/workflows/CI.yaml/badge.svg)](https://github.com/nubezartech/SAU_sdk/actions/workflows/CI.yaml)
 
-![PRs](https://img.shields.io/github/issues-pr/nubezartech/SAU_sdk)
-![Issues](https://img.shields.io/github/issues/nubezartech/SAU_sdk)
+[![PRs](https://img.shields.io/github/issues-pr/nubezartech/SAU_sdk)](https://github.com/nubezartech/SAU_sdk/pulls?q=is%3Aopen+is%3Apr)
+[![Issues](https://img.shields.io/github/issues/nubezartech/SAU_sdk)](https://github.com/nubezartech/SAU_sdk/issues?q=is%3Aopen+is%3Aissue)
 ![Stars](https://img.shields.io/github/stars/nubezartech/SAU_sdk)
 ![License](https://img.shields.io/github/license/nubezartech/SAU_sdk)
 
@@ -17,7 +18,7 @@
 
 - [Instalación](#installation)
 - [Configuración del entorno](#enviroment)
-- [Author](#author)
+- [Author](#authors)
 
 
 ## ⛏️ Configura las variables del entorno <a name = "enviroment"></a>
